@@ -1,15 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Lato', sans-serif;
 }
 
 body{
-    background: #0a2a43;
-    font-family: 'Lato', sans-serif;
+     
+  /*  background: #0a2a43; */
+     background: #fff;
+  
+ 
+
 
 }
 
+
+/***** parallax inicio **/
 .bgimages{
     position: relative;
     width: 100%;
@@ -58,10 +64,101 @@ body{
     z-index: 1;
 }
 
-.content{
+.text{
     margin: 80px;
-    color: #fff;
+    color: #000;
     padding: 10px;
     font-size: 1.5em;
     text-align: justify;
+}
+
+
+ 
+/***** Sections gray **/
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+
+/***** CLIMBER ****/
+.cardSuperContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+
+.cardSuperContainer .container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+
+}
+
+.cardSuperContainer .container .card:hover{
+    height: 420px;
+}
+
+.cardSuperContainer .container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+
+}
+
+.cardSuperContainer .container .card .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.cardSuperContainer .container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.cardSuperContainer .container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin: -40px;
+    transition-delay: 0.3s;
+
+
+}
+
+.cardSuperContainer .container .card .content h2{
+    color: red;
+}
+
+.cardSuperContainer .container .card .content p{
+    padding: 15px;
 }
