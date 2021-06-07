@@ -746,3 +746,35 @@ h1 {
 .work .work-popup-tag-link {
   font-size: 13px;
 }
+
+
+
+/*****containterParralax***/
+
+.containterParralax{
+  text-align: center;
+}
+
+.containterParralax h2{
+  font-size: 24vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+ span{
+ text-align: center;
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1em;
+ 
+}
+
+.si:nth-child(1) .containterParralax h2{
+  background-image: url(../img/everest.jpeg);
+}
+
