@@ -779,4 +779,10 @@ h1 {
 }
 
 
- 
+ /*** LIBRO **/
+
+ #album{
+   width: 1024px;
+   height: 600px;
+   margin: 5% auto;
+ }
