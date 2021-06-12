@@ -765,7 +765,7 @@ h1 {
   background-attachment: fixed;
 }
 
- span{
+.containterParralax span{
  text-align: center;
   font-size: 5vw;
   text-transform: uppercase;
@@ -778,3 +778,34 @@ h1 {
   background-image: url(../img/everest.jpeg);
 }
 
+
+
+
+.myBox {
+  border: none;
+  padding: 5px;
+  font: 24px ;
+  width: 100%;
+  height: 40%;
+  overflow: scroll;
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid #d88683;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #d88683;  
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #d88683;  
+  }
