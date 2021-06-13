@@ -31,7 +31,7 @@
 .book {
     position: relative;
     margin: 0 auto;
-    width: 180px;
+    width: 350px;
     height: 260px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -449,18 +449,10 @@
 .no-js .book[data-book="book-1"],
 .book[data-book="book-1"] .front {
     background-image: url("../img/demolibroanimada.gif");
-    background-image: url("../img/demolibroanimada.gif");
-    background-image: url("../img/demolibroanimada.gif");
-    
-}
+  }
 
 .book[data-book="book-1"] .inner { border-color: #fff }
 
-.book[data-book="book-1"] .cover::before {
-    background-image: url("../img/demolibroanimada.gif");
-    background-image: url("../img/demolibroanimada.gif");
-    background-image: url("../img/demolibroanimada.gif");
-}
  
 
 /* border around bookblock same as book cover color*/
