@@ -1,0 +1,21 @@
+.section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  position: relative;
+}
+#container {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+#text {
+  display: inline-block;
+  color: #000;
+  border-right: 3px solid #000;
+  font-size: 50px;
+}
+
+.Typewriter__wrapper{
+	color: #000;
+	font-size: 40px;
+}
