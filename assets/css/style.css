@@ -9,6 +9,27 @@
 }
 
 
+
+.mydiv {
+ 
+ 
+  background: linear-gradient(150deg, #fff102,  #f10271, #00c298);
+  background-size: 400% 300%;
+  animation: BgGradient 5s ease infinite;
+}
+
+@keyframes BgGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+
+.bg-white{
+  background: #FFF;
+}
+
+
 /*
 * ----------------------- SECCION INTRO --------------------------
 */
