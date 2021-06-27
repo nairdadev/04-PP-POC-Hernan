@@ -8,14 +8,31 @@
   text-align: center;
 }
 
+
+/*
+* ----------------------- SECCION INTRO --------------------------
+*/
+.textIntro{
+	text-align: left;
+	color: #000;
+	font-size: 1.4rem;
+}
+
+/**TYPEWRITER**/
+.Typewriter__cursor{
+  font-size: 40px;
+}
+
 #text {
   display: inline-block;
   color: #000;
   border-right: 3px solid #000;
   font-size: 50px;
+  text-align: left;
 }
 
 .Typewriter__wrapper{
 	color: #000;
 	font-size: 40px;
+  text-align: left;
 }
