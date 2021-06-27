@@ -58,8 +58,33 @@ ul{
 /*------------------------------------------------------------------
     [DEVELOPER]
 ------------------------------------------------------------------*/
-.backgroundDeveloper{
+/*.backgroundDeveloper{
   background-color: #3f77e9;
+}*/
+
+.backgroundDeveloper {
+  background: linear-gradient(132deg, #3f77e9, #0095f9, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 a:hover {
   text-decoration: underline;
