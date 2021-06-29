@@ -161,6 +161,13 @@
     background: #202335;
 }
 
+
+.sobreMi{
+    position: relative;
+    padding: 100px 0px 95px 0px;
+    z-index: 1;
+}
+
 .sobreMiText{
     padding-top: 30px;
     padding-bottom: 30px;
