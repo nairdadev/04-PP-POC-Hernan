@@ -1,668 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--ESTILOS-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-    <link href="./assets/css/style.css" rel="stylesheet" />
-    <link
-      href="./assets/js/vendor/swiper/css/swiper.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Hernan Carracedo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Hernán Carracedo</title>
   </head>
   <body>
-    <!-- START HOME -->
-    <section id="home">
-      <div class="container">
-        <div class="row pt-5 mt-5">
-          <div class="col-md-6 col-sm-12">
-            <div class="text-center mt-5 pt-3">
-              <!--TEXTO EN ./assets/js/main.js-->
-              <div id="title"></div>
-              <div id="description"></div>
-              <div class="textIntro mt-4">
-                Tengo dos grandes pasiones: programar y escalar montañas. Además
-                me gusta mucho transmitir toda experiencia que haya sido
-                transformadora en mí vida. También encuentro mucho placer en el
-                acto de escribir. En este espacio me propongo contar mis
-                experiencias como programador freelance, mis expediciones de
-                montaña, la experiencia de publicar un libro y lo mucho que
-                disfruto en cada charla que he dado en empresas y otros
-                organismos con mis vivencias en Himalaya y el ascenso al Everest
-                como hilo conductor del relato. Y también, porque no, los
-                desafíos que propongo de aquí en adelante.
+    <section>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 col-sm-12 text-center text-white mt-5 mb-5 pt-3"
+            >
+              <div class="containerTitle">
+                <h5 class="textType">Hola, ¿Qué tal?</h5>
+                <div id="title"></div>
+                <div id="description"></div>
               </div>
             </div>
+            <div class="col-md-6 col-sm-12 mb-5 mt-4">
+              <img src="./assets/img/BigHead.png" width="100%" />
+            </div>
           </div>
-          <!--/col-md-6-->
-          <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-            <img class="img-fluid" src="./assets/img/pampa.jpeg" />
-          </div>
-          <!--/col-md-6-->
         </div>
-        <!--/row-->
       </div>
-      <!--/container-->
     </section>
-    <!-- END HOME -->
 
-    <!-- START DEVELOPER -->
-    <section class="backgroundDeveloper">
-      <div class="contenedorSection m-3 pt-3 pb-3">
+    <section class="backgroundSobreMi">
+      <div class="container text-center text-white">
+         <h1 class="pt-5">Sobre mí</h1>
+      <p class="sobreMiText">
+        Tengo dos grandes pasiones: programar y escalar montañas. Además me
+        gusta mucho transmitir toda experiencia que haya sido transformadora en
+        mí vida. También encuentro mucho placer en el acto de escribir. En este
+        espacio me propongo contar mis experiencias como programador freelance,
+        mis expediciones de montaña, la experiencia de publicar un libro y lo
+        mucho que disfruto en cada charla que he dado en empresas y otros
+        organismos con mis vivencias en Himalaya y el ascenso al Everest como
+        hilo conductor del relato. Y también, porque no, los desafíos que
+        propongo de aquí en adelante.
+      </p>
+
+      <div class="">asdasd</div>
      
-      <div class="container">
-        <h2>DEVELOPER</h2>
-        <p>
-          Desde siempre me gustó la idea de poder modelar procesos del mundo
-          real en un sistema. La posibilidad de sistematizar procesos
-          haciéndolos más simples, más rápidos, más virtuosos es algo que
-          siempre me resultó fascinante sobre todo, porque siento que desde mi
-          tarea lo logro estoy mejorando una pequeña parte de la vida de las
-          personas que participan de eso procesos.
-        </p>
-
-        <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                ¿QUÉ HAGO?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Sistemas personalizados enfocadas en Web, desarrollados a media
-                de las particularidades del negocio y los procesos del cliente.
-                Bases de datos, control de stock, gestiones unificadas, registro
-                de personal, logística, control de ventas, comunicaciones
-                internas. Mi misión es organizar y centralizar los procesos a
-                través del desarrollo de un sistema personalizado que brinde
-                eficacia y eficiencia.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                ¿POR QUÉ DESARROLLOS A MEDIDA?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                <p>
-                  Solicitar el desarrollo de un software es ni más ni menos que
-                  crear la herramienta adecuada. Su funcionalidad estará
-                  condensando los esfuerzos de la forma más eficiente. Un
-                  software a medida se construye desde las necesidades de la
-                  empresa que lo requiere.
-                </p>
-                <p>
-                  Cuando se desarrolla un programa específico tenés la
-                  posibilidad de hacerlo tan complejo o sencillo como sea
-                  pertinente y contará con una interfaz que va a permitir
-                  recorrer las funciones de forma amigable y práctica.
-                </p>
-                <p>
-                  Cuando se recurre a programas estandarizados o prediseñados se
-                  cubren solo parte de las necesidades. Amoldar las tareas de la
-                  empresa a programas genéricos, demora y altera los procesos.
-                  La oportunidad de desarrollar sistemas a medida es crucial a
-                  la hora de efectivizar las tareas y de economizar en gastos.
-                </p>
-                <p>
-                  Los nuevos tiempos requieren de buenas prácticas de
-                  administración. Elegir un desarrollador de software o
-                  aplicaciones móviles que puedan entender las necesidades de la
-                  organización es simplificar el trabajo de todos. Solicitar un
-                  software a medida es abrir las puertas al crecimiento.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                ¿POR QUÉ CON ABONO?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                <p>
-                  Existen dos buenas razones para comprar un sistema a medida
-                  por el cual se paga un abono luego del costo inicial de
-                  desarrollo: Por un lado, es una excelente manera de reducir el
-                  costo inicial de desarrollo ya que en general no se cobra por
-                  desarrollo el valor total sino que en los abonos se prorratea
-                  este costo de desarrollo (horas de programación necesarias
-                  para hacer una aplicación personalizada) en los futuros abonos
-                  reduciendo considerablemente la cifra necesaria para acceder
-                  al sistema. Entonces ese abono del que hablamos representa un
-                  modo de financiación del desarrollo a medida. Por otro lado, y
-                  creo que es lo más importante, el abono de algún modo es una
-                  forma de contratar la disponibilidad del programador y que
-                  este se mantenga en el tiempo su compromiso y conocimiento de
-                  las particularidades del sistema y el código con el que fue
-                  programado. Una vez que el sistema personalizado se entrega al
-                  cliente y este comienza a utilizarlo, surgen infinidad de
-                  cuestiones y es deseable que estas se vayan resolviendo hasta
-                  que ya no haya presencia de estos errores, desvíos o
-                  necesidades de corrección de errores. Estos ajustes pueden ser
-                  desde cambios estéticos hasta modificaciones en la información
-                  que cada pantalla muestra o no muestra.
-                </p>
-                <p>
-                  Son infinitos los requerimientos que siempre surgen de parte
-                  del cliente una vez que el sistema se va utilizando y resulta
-                  deseable atenderlos y plasmarlos en el sistema de forma que
-                  este acompañe los procesos del negocio y no que estos deban
-                  ser cambiados forzosamente para poder mantenerse dentro del
-                  funcionamiento de la aplicación.
-                </p>
-                <p>
-                  Conceptualmente, cuando el cliente compra un sistema
-                  personalizado (y no un aplicativo enlatado) tiene las ventajas
-                  que se explicaron antes y es deseable que este se sostenga
-                  personalizado con el correr del tiempo. Este abono compromete
-                  al desarrollador y es una garantía para que todo esto ocurra.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/accordion-->
-
-        <div class="hero-unit mt-5">
-          <h4>TRABAJOS</h4>
-        <div class="row">
-          <div class="large-12 columns">
-       
-            <ul class="small-block-grid-2 medium-block-grid-3 flip-cards">
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="#">Code</a>
-                  <i class="fa fa-code card-icon "></i>
-                </div>
-                <div class="panel card-back">
-                  <i class="fa fa-code card-icon"></i>
-                  <div class="hub-info">
-                    <a href="#">JKLCode.com</a>
-                    <p>Find coding gists, cheatsheets, plugins, themes, resources, and tutorials.</p>
-                  </div>
-                  <small class="clear">Updated TTH.</small>
-                </div>
-              </li>
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="http://www.aaronsnowberger.com">Design</a>
-                  <i class="fa fa-pencil-square-o card-icon"></i>
-                </div>
-      
-                <div class="panel card-back">
-                  <i class="fa fa-pencil-square-o card-icon"></i>
-                  <div class="hub-info">
-                    <a href="http://www.aaronsnowberger.com">AaronSnowberger.com</a>
-                    <p>Take a look at my graphic design portfolio and contact me for design work.</p>
-                  </div>
-                  <small class="clear">Updated Saturdays.</small>
-                </div>
-              </li>
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="">Education</a>
-                  <i class="fa fa-paper-plane-o card-icon"></i>
-                </div>
-      
-                <div class="panel card-back">
-                  <i class="fa fa-paper-plane-o card-icon"></i>
-                  <div class="hub-info">
-                    <a href="">Udemy.com</a>
-                    <p>Join classes about Computers, Technology, Coding, Design, and Language Learning.</p>
-                  </div>
-                  <small class="clear">Updated Mondays.</small>
-                </div>
-              </li>
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="">Life</a>
-                  <i class="fa fa-map-o card-icon"></i>
-                </div>
-      
-                <div class="panel card-back">
-                  <i class="fa fa-map-o card-icon"></i>
-                  <div class="hub-info">
-                    <a href="">KeysToAGoodLife.com</a>
-                    <p>Find resources about business, family, exercise, and other various topics.</p>
-                  </div>
-                  <small class="clear">Updated monthly.</small>
-                </div>
-              </li>
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="http://www.keytokorean.com">Language</a>
-                  <i class="fa fa-language card-icon"></i>
-                </div>
-      
-                <div class="panel card-back">
-                  <i class="fa fa-language card-icon"></i>
-                  <div class="hub-info">
-                    <a href="http://www.keytokorean.com">KeyToKorean.com</a>
-                    <p>Take your Korean from "foreign" to fluent with vocab lists and grammar guides.</p>
-                  </div>
-                  <small class="clear">Updated MWF.</small>
-                </div>
-              </li>
-      
-              <li ontouchstart="this.classList.toggle('hover');">
-                <div class="large button card-front">
-                  <a href="http://www.aicfchurch.org">Church</a>
-                  <i class="fa fa-users card-icon"></i>
-                </div>
-      
-                <div class="panel card-back">
-                  <i class="fa fa-users card-icon"></i>
-                  <div class="hub-info">
-                    <a href="http://www.aicfchurch.org">AICFChurch.org</a>
-                    <p>Listen to sermon podcasts or download church graphic design resources.</p>
-                  </div>
-                  <small class="clear">Updated the 4th Sunday.</small>
-                </div>
-              </li>
-      
-            </ul>
-          </div>
-        </div>
-       
-        </div>
-
-
-
-
-        <h4 class="mt-5">TECNOLOGÍAS QUE DOMINO</h4>
-        <div class="swiper-slider swiper-clients mt-3">
-          <!-- Swiper Wrapper -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/bootstrap.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/css-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/googlemaps-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/handlebars.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/html-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/javascript-icon.png"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/mongodb-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/mysql-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/nodejs-icon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/php.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/reactjs.jpeg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-clients-img"
-                src="./assets/img/tecnologias/sqlserver-icon.png"
-              />
-            </div>
-          </div>
-          <!-- End Swiper Wrapper -->
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <h4>ENSEÑAR PARA APRENDER</h4>
-            <p>
-              Alguien dijo por ahí: "Si queres dominar algo, enséñalo. Más lo
-              enseñas, mejor lo aprendes. Enseñar es una poderosa herramienta de
-              aprendizaje." y tuve la suerte de comprobarlo en primera persona
-              trabajando como mentor en ADS (Academia de Software). A partir de
-              esa experiencia, entendí que debo seguir enseñando cada vez que
-              tenga la oportunidad para poder ser cada vez mejor programador.
-            </p>
-
-            <p>
-              Por otra parte, escribir código y ver que funciona, entender algo
-              que antes parecía imposible, aprender una nueva tecnología, son
-              instantes en los que me siento realmente pleno. Por eso, pensarme
-              participando en el aprendizaje de otros, aportando mi parte para
-              facilitar ese proceso es algo muy gratificante
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h4>SEMINARIO GRATUITO JS</h4>
-            <iframe
-              class="mt-3"
-              width="100%"
-              height="300"
-              src="https://www.youtube.com/embed/fUP6lhZNMbE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>  
-      </div>
-      <!--/container-->
+    </div>
     </section>
-    <!-- END DEVELOPER -->
-    <!-- START WRITER -->
-    <section >
-      <div class="container">
-        <h4>WRITER</h4>
-        <p>
-          Mi tiempo se reparte entre la programación y el desarrollo de
-          aplicaciones y mi otra pasión, el alpinismo.
-        </p>
-        <p>
-          Con el correr de los años, me he propuesto aprender y avanzar en las
-          actividades de montaña imponiéndome desafíos cada vez más exigentes.
-          Entre muchísimas expediciones pude concretar tres que soñaba en los
-          tiempos que daba mis primeros pasos: una travesía a través de los
-          Hielos Continentales, escalar el Aconcagua y en el corazón de la
-          cordillera del Himalaya, la cumbre del Everest, el punto más alto del
-          planeta.
-        </p>
-        <p>
-          Al regreso junto a mi compañero de expedición nos propusimos un nuevo
-          desafío de similar magnitud no ya desde lo físico, sino desde la
-          disciplina y la exigencia intelectual: en 2017 publicamos el libro
-          Hermano Everest [hermanoeverest.com], un diario de viaje donde
-          plasmamos los dos meses de expedición en Himalaya.
-        </p>
 
-        <div class="row mt-5">
-          <div class="col-md-4 col-sm-12">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/40S32V8UN5k"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/lq10QDYTCcE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/lq10QDYTCcE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-         
-          <div class="col-md-6 col-sm-12">
-            <p>Cada libro tiene una historia oculta y si bien un día el libro ve la luz, sale al mundo, ésta permanece en las sombras. La historia de este libro dibuja un camino que empieza y termina involucrando a la tecnología pero, en su derrotero, transita la escritura en su estadio más primario sintetizado en una libreta, un lápiz y una bolsa de dormir, en una carpa a miles de metros sobre el nivel del mar, en un glaciar del Himalaya</p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="imgLibro" src="./assets/img/libro/demolibroanimada.gif">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END WRITER -->
-
-
-
-
-
-
- 
-
-
-
-
-
-
-    <!-- START CONTACT -->
-    <section class="backgroundWriter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="heading-box text-center">
-              <h3 class="heading-title">
-                <span class="fw-normal">Hablemos</span> de lo que tengas ganas
-                nomás!
-              </h3>
-              <p class="heading-desc text-muted mt-3">
-                Tengo mucho humo para tí
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5 pt-4">
-          <div class="col-lg-3">
-            <div class="mt-4">
-              <h5 class="f-17 mb-1 mt-4 pt-2">Email</h5>
-              <p class="text-muted">pampa@pampa.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-8 offset-lg-1">
-            <div class="custom-form mt-4">
-              <form
-                method="post"
-                name="myForm"
-                onsubmit="return validateForm()"
-              >
-                <p id="error-msg"></p>
-                <div id="simple-msg"></div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        class="form-control"
-                        placeholder="Nombre"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <input
-                        name="email"
-                        id="email"
-                        type="email"
-                        class="form-control"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Motivo"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <textarea
-                        name="comments"
-                        id="comments"
-                        rows="4"
-                        class="form-control"
-                        placeholder="Mensaje"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-lg-12">
-                    <input
-                      type="submit"
-                      id="submit"
-                      name="send"
-                      class="submitBnt btn btn-rounded btn-primary"
-                      value="Enviar"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END CONTACT -->
-
-    <!--JAVASCRIPT-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/jquery-2.1.1.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./assets/js/main.js"></script>
-
-
-    <script
-      src="./assets/js/vendor/jquery.wow.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/vendor/swiper/js/swiper.jquery.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/vendor/masonry/jquery.masonry.pkgd.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/vendor/masonry/imagesloaded.pkgd.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/components/wow.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/components/swiper.min.js"
-      type="text/javascript"
-    ></script>
-    <script
-      src="./assets/js/components/masonry.min.js"
-      type="text/javascript"
-    ></script>
   </body>
 </html>

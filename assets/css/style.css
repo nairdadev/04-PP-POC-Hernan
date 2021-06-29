@@ -1,444 +1,169 @@
-/*------------------------------------------------------------------
-    [GENERAL]
-------------------------------------------------------------------*/
-@charset "UTF-8";
-* {
-  box-sizing: border-box;
-}
-
-.section {
-  padding-bottom: 100px;
-  padding-top: 100px;
-  position: relative;
-}
-#container {
-  margin: 50px 0 0 0;
-  text-align: center;
-}
-
-ul{
-  list-style-type: none;
-}
-
-.accordion-item {
-   background-color: transparent;
-  border: 1px solid rgba(0,0,0,.125);
-}
-
-.accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
-  color: #fff;
-  text-align: left;
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  overflow-anchor: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
-}
-
-
-
-
-
-.contenedorSection{
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1px);
-  color: #fff;
-}
-
-
-/*------------------------------------------------------------------
-    [Intro]
-------------------------------------------------------------------*/
-.textIntro{
-	text-align: left;
-	color: #000;
-	font-size: 1.4rem;
-}
-
-
-
-/*------------------------------------------------------------------
-    [Typewriter]
-------------------------------------------------------------------*/
-.Typewriter__cursor{
-  font-size: 40px;
-}
-
-#text {
-  display: inline-block;
-  color: #000;
-  border-right: 3px solid #000;
-  font-size: 50px;
-  text-align: left;
-}
-
-.Typewriter__wrapper{
-	color: #000;
-	font-size: 40px;
-  text-align: left;
-}
-
-
-
-
-/*------------------------------------------------------------------
-    [DEVELOPER]
-------------------------------------------------------------------*/
-/*.backgroundDeveloper{
-  background-color: #3f77e9;
-}*/
-
-.backgroundDeveloper {
-  background: linear-gradient(132deg, #3f77e9, #0095f9, #212335);
-  background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
-  position: relative;
-   
-  width: 100%;
-  overflow: hidden;
-  padding:0;
-  margin:0px;
-}
-
-/* Animate Background*/
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Unit ----------------------*/
  
-.hero-unit h1 {
-  font-weight: bold;
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
-.hero-unit hgroup {
-  margin: 3rem 0;
-}
-.hero-unit .card-icon { /* front of card */
-  display: block;
-  margin: 0.5rem auto 0;
-  font-size: 2rem;
-  color: white;
-}
-.hero-unit .clients {
-  margin: 2rem auto;
-}
-.hero-unit .clients a {
-  color: white;
-}
-.clients .fa-stack-2x {
-  color: gray;
-}
-.clients:hover .fa-stack-2x {
-  color: #333333;
+ 
+ 
+/* FONDO ANIMADO */
+
+.area{
+    background: #000;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height: inherit;
+    
+   
 }
 
-/* Card design - front */
-.button.large {
-  margin: 0;
-  padding: 3.25rem;
-}
-.button.large a {
-  color: white;
-  font-size: 1.75rem;
-  font-weight: 100;
-  margin-top: 2rem;
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-/* Card design - back */
-.panel i {
-  font-size: 2rem;
-  display: block;
-  float: left;
-  width: 20%;
-  opacity: 0.5;
-}
-.panel a, 
-.panel p, 
-.panel small {
-  width: 80%;
-  float: right;
-}
-.panel a {
-  margin-bottom: 0.5rem;
-}
-.panel a:hover {
-  text-decoration: underline;
-}
-.panel small {
-  margin-top: -0.5rem;
-  font-style: italic;
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
 }
 
-/* Buttons Card Flipper 
- * Source: https://cssdeck.com/labs/rxcleo5w
- */
-.flip-cards {
-  float: left;
-  width: 100%;
-  height: 100%;
-  padding-left: 1rem;
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
 }
 
-.flip-cards li {
-  float: left;
-  width: 33.3%;
-  height: 180px;
-  position: relative;
-  padding: 0;
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
 }
 
-.flip-cards li:hover {
-  cursor: pointer;
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
 }
 
-.flip-cards li:hover .card-front {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform: perspective(1000) rotateY(180deg);
-  -moz-transform: perspective(1000) rotateY(180deg);
-  -ms-transform: perspective(1000) rotateY(180deg);
-  -o-transform: perspective(1000) rotateY(180deg);
-  transform: perspective(1000) rotateY(180deg);
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
 }
 
-.flip-cards li:hover .card-back {
-  z-index: 950;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform: perspective(1000) rotateY(0deg);
-  -moz-transform: perspective(1000) rotateY(0deg);
-  -ms-transform: perspective(1000) rotateY(0deg);
-  -o-transform: perspective(1000) rotateY(0deg);
-  transform: perspective(1000) rotateY(0deg);
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
 }
 
-.flip-cards .card-front,
-.flip-cards .card-back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.6s;
-  -moz-transition: -moz-transform 0.6s;
-  -o-transition: -o-transform 0.6s;
-  transition: transform 0.6s;
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
 }
 
-.flip-cards .card-front {
-  -webkit-transform: perspective(1000) rotateY(0);
-  -moz-transform: perspective(1000) rotateY(0);
-  -ms-transform: perspective(1000) rotateY(0);
-  -o-transform: perspective(1000) rotateY(0);
-  transform: perspective(1000) rotateY(0);
-  z-index: 900;
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
 }
 
-.flip-cards .card-back {
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  -o-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  z-index: 800;
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
 }
 
-/* Button Card Colors */
-.flip-cards .panel {
-  border: none;
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
 }
 
-.flip-cards .panel i,
-.flip-cards .panel p,
-.flip-cards .panel a,
-.flip-cards .panel small {
-  color: white;
-}
-
-/* First button color */
-.flip-cards li:first-child > .button {
-  background-color: rgba(40, 57, 77, 0.8);
-}
-.flip-cards li:first-child > .panel {
-  background-color: rgba(40, 57, 77, 1);
-}
-
-/* Second button color */
-.flip-cards li:nth-child(2) > .button {
-  background-color: rgba(109, 193, 202, 0.8);
-}
-.flip-cards li:nth-child(2) > .panel {
-  background-color: rgba(109, 193, 202, 1);
-}
-
-/* Third button color */
-.flip-cards li:nth-child(3) > .button {
-  background-color: rgba(211, 81, 45, 0.8);
-}
-.flip-cards li:nth-child(3) > .panel {
-  background-color: rgba(211, 81, 45, 1);
-}
-
-/* Fourth button color */
-.flip-cards li:nth-child(4) > .button {
-  background-color: rgba(235, 167, 36, 0.8);
-}
-.flip-cards li:nth-child(4) > .panel {
-  background-color: rgba(235, 167, 36, 1);
-}
-
-/* Fifth button color */
-.flip-cards li:nth-child(5) > .button {
-  background-color: rgba(75, 135, 150, 0.8);
-}
-.flip-cards li:nth-child(5) > .panel {
-  background-color: rgba(75, 135, 150, 1);
-}
-
-/* Sixth (last) button color */
-.flip-cards li:last-child > .button {
-  background-color: rgba(100, 66, 87, 0.8);
-}
-.flip-cards li:last-child > .panel {
-  background-color: rgba(100, 66, 87, 1);
-  color: white;
-}
-
-/*
- * RESPONSIVENESS -------------------------------------------------
- */
-@media only screen and ( max-width: 40em ) {
-	.hero-unit {
-		height: 800px;
-	}
-	.flip-cards li {
-		width: 50%;
-		/*height: 160px;*/
-	}
-}
-@media only screen and ( max-width: 30em ) {
-	.hero-unit h1 {
-		font-size: 1.75rem;
-	}
-	.hero-unit h3 {
-		font-size: 1.125rem;
-	}
-}
-@media only screen and ( max-width: 25em ) {
-	.hero-unit {
-		height: 920px;
-	}
-	.hero-unit hgroup {
-		margin: 2rem 0;
-	}
-	.hero-unit h1 {
-		font-size: 1.35rem;
-		padding-bottom: 0.25rem;
-	}
-	.hero-unit h3 {
-		font-size: 0.85rem;
-	}
-	.hero-unit .card-icon {
-		font-size: 1.35rem;
-	}
-	.hero-unit .card-back .card-icon {
-		font-size: 2rem;
-		margin: 0;
-		padding: 5px 0 20px 5px;
-	}
-	.flip-cards li {
-		width: 100%;
-		font-size: 1.35rem;
-		height: 120px;
-	}
-	.flip-cards .panel p {
-		display: none;	
-	}
-	.flip-cards .panel small {
-		margin: 0;
-	}
-	.button.large {
-		padding: 2rem;
-	}
-	.button.large a {
-		font-size: 1.35rem;
-	}
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
 }
 
 
 
+@keyframes animate {
 
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
 
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 
-/*------------------------------------------------------------------
-    [Swiper Slider]
-------------------------------------------------------------------*/
-.swiper-slider {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+}
+/* FONDO ANIMADO */
+
+.containerTitle{
+    margin-top: 140px;
 }
 
-.swiper-clients-img {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin: 0 auto;
-  opacity: 1;
-  cursor: pointer;
-  transition-duration: 200ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+/**TYPEWRITER**/
+.textType{
+    color:#fff;
+    font-size: 55px;
+}
+#text {
+    display: inline-block;
+    color: #FFF;
+    border-right: 3px solid #FFF;
+    font-size: 50px;
+  }
+  
+  .Typewriter__wrapper{
+      color: #FFF;
+      font-size: 50px;
+  }
+
+
+  /**SOBREMI**/
+
+.backgroundSobreMi{
+    background: #202335;
 }
 
-.swiper-clients-img:hover {
-  opacity: 0.8;
-  transition-duration: 200ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.sobreMiText{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 25px;
 }
-
-
-
-
-/*------------------------------------------------------------------
-    [WRITER]
-------------------------------------------------------------------*/
-.backgroundWriter{
-  background-color: #0095f9;
-}
-.imgLibro{
-  width: 100%;
-  height: 300px;
-}
-

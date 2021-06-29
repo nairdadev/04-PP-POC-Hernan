@@ -1,10 +1,23 @@
+// demo or it did not happen
+
+var demo1 = document.querySelector('#demo-1')
+var demo2 = document.querySelector('#demo-2')
+
+setTimeout(() => { demo1.checked = true }, 500)
+setTimeout(() => { demo1.checked = false}, 1500)
+setTimeout(() => { demo2.checked = true }, 2000)
+setTimeout(() => { demo2.checked = false}, 3000)
+
+
+
+
 //*******************TITLE****************************/
 let app = document.getElementById("title");
 var typewriter = new Typewriter(title, {
   loop: false,
 });
 typewriter
-  .typeString("Hola soy Hernán Carracedo")
+  .typeString("Soy Hernán Carracedo.")
   .start()
 
 //*******************DESCRIPTION****************************/
@@ -16,7 +29,7 @@ typewriter
 
   typewriter
   .pauseFor(3600)
-  .typeString('tengo una')
+  .typeString('Tengo una')
   .pauseFor(300)
   .deleteChars(3)
   .typeString('dos')
@@ -29,39 +42,3 @@ typewriter
   .start();
    
   
-
-//*******************CARDS****************************/
-
-
-  var $cell = $('.card');
-
-  //open and close card when clicked on card
-  $cell.find('.js-expander').click(function() {
-  
-    var $thisCell = $(this).closest('.card');
-  
-    if ($thisCell.hasClass('is-collapsed')) {
-      $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed').addClass('is-inactive');
-      $thisCell.removeClass('is-collapsed').addClass('is-expanded');
-      
-      if ($cell.not($thisCell).hasClass('is-inactive')) {
-        //do nothing
-      } else {
-        $cell.not($thisCell).addClass('is-inactive');
-      }
-  
-    } else {
-      $thisCell.removeClass('is-expanded').addClass('is-collapsed');
-      $cell.not($thisCell).removeClass('is-inactive');
-    }
-  });
-  
-  //close card when click on cross
-  $cell.find('.js-collapser').click(function() {
-  
-    var $thisCell = $(this).closest('.card');
-  
-    $thisCell.removeClass('is-expanded').addClass('is-collapsed');
-    $cell.not($thisCell).removeClass('is-inactive');
-  
-  });
