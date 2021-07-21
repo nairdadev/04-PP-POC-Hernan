@@ -17,73 +17,110 @@
   </head>
   <body>
     <section>
-      <div class="area">
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div
-              class="col-md-6 col-sm-12 text-center text-white mt-5 mb-5 pt-3"
-            >
-              <div class="containerTitle">
-                <h5 class="textType">Hola, ¿Qué tal?</h5>
-                <div id="title"></div>
-                <div id="description"></div>
-              </div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-6 col-sm-12 text-center text-white mt-5 mb-5 pt-3"
+            style="z-index: 9999"
+          >
+            <div class="containerTitle">
+              <h5 class="textType">Hola, ¿Qué tal?</h5>
+              <div id="title"></div>
+              <div id="description"></div>
             </div>
-            <div class="col-md-6 col-sm-12 mb-5 mt-4">
-              <img src="./assets/img/BigHead.png" width="100%" />
-            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-5 mt-4" style="z-index: 9999">
+            <img src="./assets/img/BigHead.png" width="100%" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="backgroundSobreMi">
-      <div class="container text-center text-white sobreMi">
-        <h1 class="pt-5">Sobre mí</h1>
-        <p class="sobreMiText">
-          Tengo dos grandes pasiones: programar y escalar montañas. Además me
-          gusta mucho transmitir toda experiencia que haya sido transformadora
-          en mí vida. También encuentro mucho placer en el acto de escribir. En
-          este espacio me propongo contar mis experiencias como programador
-          freelance, mis expediciones de montaña, la experiencia de publicar un
-          libro y lo mucho que disfruto en cada charla que he dado en empresas y
-          otros organismos con mis vivencias en Himalaya y el ascenso al Everest
-          como hilo conductor del relato. Y también, porque no, los desafíos que
-          propongo de aquí en adelante.
-        </p>
-      </div>
-    </section>
-
-    <section class="backgroundDeveloper text-center text-white">
+    <!-- SOBREMI
+    ============================================= -->
+    <section id="about" class="section bg-dark-1">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 mt-5 sobreMi">
-            <p class="developerText">DEVELOPER</p>
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2
+            class="
+              text-24 text-muted
+              opacity-1
+              text-uppercase
+              fw-600
+              w-100
+              mb-0
+            "
+          >
+            Más sobre Mí
+          </h2>
+          <p
+            class="
+              text-9 text-white
+              fw-600
+              position-absolute
+              w-100
+              align-self-center
+              lh-base
+              mb-0
+            "
+          >
+            Sobre mí<span
+              class="
+                heading-separator-line
+                border-bottom border-3 border-primary
+                d-block
+                mx-auto
+              "
+            ></span>
+          </p>
+        </div>
+        <!-- Heading end-->
 
-            <p class="developerTextContainer">
-              Desde siempre me gustó la idea de poder modelar procesos del mundo
-              real en un sistema. La posibilidad de sistematizar procesos
-              haciéndolos más simples, más rápidos, más virtuosos es algo que
-              siempre me resultó fascinante sobre todo, porque siento que desde
-              mi tarea lo logro estoy mejorando una pequeña parte de la vida de
-              las personas que participan de eso procesos.
-             </p>
+        <div class="row gy-5">
+          <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+            <h2 class="text-7 text-white fw-600 mb-3">
+              Hola, soy <span class="text-primary">Hernán Carracedo,</span> más
+              conocido como Pampa
+            </h2>
+            <p class="text-white-50">
+              Tengo dos grandes pasiones: programar y escalar montañas.
+            </p>
+            <p class="text-white-50">
+              Además me gusta mucho transmitir toda experiencia que haya sido
+              transformadora en mí vida. También encuentro mucho placer en el
+              acto de escribir.
+            </p>
+            <p class="text-white-50">
+              En este espacio me propongo contar mis experiencias como
+              programador freelance, mis expediciones de montaña, la experiencia
+              de publicar un libro y lo mucho que disfruto en cada charla que he
+              dado en empresas y otros organismos con mis vivencias en Himalaya
+              y el ascenso al Everest como hilo conductor del relato. Y también,
+              porque no, los desafíos que propongo de aquí en adelante.
+            </p>
           </div>
-          <div class="col-md-6">
-            <img src="./assets/img/javascript.jpeg" width="111%" />
+          <div class="col-lg-5 col-xl-4">
+            <div class="ps-lg-4">
+              <ul class="list-style-2 list-style-light text-light">
+                <li>
+                  <span class="fw-600 me-2">Nombre:</span>Hernán Carracedo
+                </li>
+                <li>
+                  <span class="fw-600 me-2">Email:</span
+                  ><a href="mailto:chat@simone.com">hernanpampa@gmail.com</a>
+                </li>
+                <li class="border-0">
+                  <span class="fw-600 me-2">De:</span>General Pico, La Pampa, Argentina
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn btn-primary rounded-pill"
+                >Descargar CV</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -92,5 +129,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
