@@ -260,15 +260,12 @@ canvas {
   .nav-menu a:hover span, .nav-menu li:hover > a span {
 	display: block;
   }
-  
-  /**
-  * Mobile Navigation 
-  */
+ 
   .mobile-nav-toggle {
 	position: fixed;
 	right: 10px;
 	top: 10px;
-	z-index: 9998;
+	z-index: 9999;
 	border: 0;
 	background: none;
 	font-size: 28px;
