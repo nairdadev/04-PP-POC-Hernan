@@ -370,6 +370,16 @@ canvas {
   }
 }
 
+.icon{
+	font-size: 5rem;
+}
+@media (max-width: 1200px) {
+	.icon {
+	  font-size: 5rem !important;
+	}
+  }
+  
+
  
 
 /*--------------------------------------------------------------
