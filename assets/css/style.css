@@ -114,11 +114,11 @@ body {
 }
 
 .text-24 {
-  font-size: calc(1.95rem + 8.4vw) !important;
+  font-size: 6rem !important;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .text-24 {
-    font-size: 8.25rem !important;
+    font-size: 4rem !important;
   }
 }
 
@@ -126,6 +126,12 @@ body {
   font-size: 36px !important;
   font-size: 2.25rem !important;
 }
+
+@media (min-width: 1200px) {
+	.text-9 {
+	  font-size: 4rem !important;
+	}
+  }
 
 .section {
   padding: 4.5rem 0;
@@ -235,7 +241,7 @@ canvas {
   
   @media (min-width: 992px) {
 	.nav-menu a, .nav-menu a:focus {
-	  width: 56px;
+	  width: 45px;
 	}
 	.nav-menu a span, .nav-menu a:focus span {
 	  display: none;
@@ -360,7 +366,7 @@ canvas {
 }
 @media (min-width: 1200px) {
   .text-dev {
-    font-size: 5.25rem !important;
+    font-size: 4rem !important;
   }
 }
 
