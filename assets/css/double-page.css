@@ -16,9 +16,9 @@
 
 .flipbook-viewport .flipbook{
 	margin-top: 200px;
-	width:800px;
-	height:400px;
-	left:-400px;
+	width:100%;
+	height:768px;
+	left:-650px;
 	top:-200px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .flipbook-viewport .double{
-	width:800px;
-	height:400px;
+	width:inherit;
+	height:inherit;
 	background-size:100% 100%;
 }
