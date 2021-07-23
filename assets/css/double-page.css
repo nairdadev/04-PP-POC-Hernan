@@ -1,5 +1,3 @@
- 
-
 .flipbook-viewport{
 	overflow:hidden;
 	width:100%;
@@ -7,20 +5,24 @@
 }
 
 .flipbook-viewport .container{
-	margin-top: 400px;
+	margin-top: 100px;
 	position:relative;
 	top:50%;
 	left:50%;
 	margin:auto;
 }
 
+ 
+
 .flipbook-viewport .flipbook{
-	margin-top: 200px;
-	width:100%;
-	height:768px;
-	left:-650px;
+	margin-top: 300px;
+	width:800px;
+	height:400px;
+	left:-400px;
 	top:-200px;
 }
+
+ 
 
 .flipbook-viewport .page{
 	width:400px;
@@ -29,6 +31,63 @@
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 }
+
+.flipbook-viewport .double{
+	width:800px;
+	height:400px;
+	background-size:100% 100%;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+	.flipbook-viewport{
+		overflow:hidden;
+		width:100%;
+		height:100%;
+	}
+	
+	.flipbook-viewport .container{
+		margin-top: 100px;
+		position:relative;
+		top:50%;
+		left:50%;
+		margin:auto;
+	}
+	
+	 
+	
+	.flipbook-viewport .flipbook{
+		margin-top: 300px;
+		width:400px !important;
+		height:400px !important;
+		left:-225px;
+		top:-200px;
+	}
+	
+	 
+	
+	.flipbook-viewport .page{
+		width:200px !important;
+		height:400px !important;
+		background-color:white;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	}
+	
+	.flipbook-viewport .double{
+		width:400px !important;
+		height:400px !important;
+		background-size:100% 100%;
+	}
+	
+	
+}
+
+
+
+
+
 
 .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -61,8 +120,4 @@
 	box-shadow:0 0 20px #ccc;
 }
 
-.flipbook-viewport .double{
-	width:inherit;
-	height:inherit;
-	background-size:100% 100%;
-}
+

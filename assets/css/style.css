@@ -246,7 +246,7 @@ canvas {
   
   @media (min-width: 992px) {
 	.nav-menu a, .nav-menu a:focus {
-	  width: 45px;
+	  width: 55px;
 	}
 	.nav-menu a span, .nav-menu a:focus span {
 	  display: none;
