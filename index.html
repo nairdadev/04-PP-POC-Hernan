@@ -2,43 +2,54 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
   <link href="./assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="./assets/css/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Archivos necesarios para libro -->
   <script type="text/javascript" src="./assets/js/jquery.min.1.7.js"></script>
   <script type="text/javascript" src="./assets/js/modernizr.2.5.3.min.js"></script>
+
   <title>Hernán Carracedo</title>
 </head>
 
 <body>
+  <!-- MENU
+    ============================================= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
   <header id="header" class="d-flex flex-column justify-content-center">
-
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#sobremi" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre Mi</span></a></li>
         <li><a href="#developer" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Developer</span></a>
         </li>
-        <li><a href="#speaker" class="nav-link scrollto"><i class='bx bx-dots-horizontal-rounded' ></i> <span>Speaker</span></a>
+        <li><a href="#speaker" class="nav-link scrollto"><i class='bx bx-dots-horizontal-rounded'></i>
+            <span>Speaker</span></a>
         </li>
         <li><a href="#writer" class="nav-link scrollto"><i class="bx bx-pencil"></i> <span>Writer</span></a></li>
-      
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
+  </header>
+  <!-- SOBREMI
+    ============================================= -->
 
-  </header><!-- End Header -->
-
+  <!-- HOME
+    ============================================= -->
   <section id="home">
+    <!--FONDO PARTICULAS-->
     <div id="particles-js"></div>
+    <!-- /FONDO PARTICULAS-->
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-12 text-center text-white mt-5 mb-5 pt-3" style="z-index: 999">
@@ -57,7 +68,7 @@
 
   <!-- SOBREMI
     ============================================= -->
-  <section id="sobremi" class="section bg-dark-1">
+  <section id="sobremi" class="section bg-dark-4">
     <div class="container">
       <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
@@ -72,7 +83,7 @@
           Más sobre Mí
         </h2>
         <p class="
-              text-9 text-white
+              text-9 text-black
               fw-600
               position-absolute
               w-100
@@ -88,23 +99,22 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
       <div class="row gy-5">
         <div class="col-lg-7 col-xl-8 text-center text-lg-start">
-          <h2 class="text-7 text-white fw-600 mb-3">
+          <h2 class="text-7 text-black-50 fw-600 mb-3">
             Hola, soy <span class="text-primary">Hernán Carracedo,</span> más
             conocido como Pampa
           </h2>
-          <p class="text-white-50">
+          <p class="text-black-50">
             Tengo dos grandes pasiones: programar y escalar montañas.
           </p>
-          <p class="text-white-50">
+          <p class="text-black-50">
             Además me gusta mucho transmitir toda experiencia que haya sido
             transformadora en mí vida. También encuentro mucho placer en el
             acto de escribir.
           </p>
-          <p class="text-white-50">
+          <p class="text-black-50">
             En este espacio me propongo contar mis experiencias como
             programador freelance, mis expediciones de montaña, la experiencia
             de publicar un libro y lo mucho que disfruto en cada charla que he
@@ -117,14 +127,14 @@
           <div class="ps-lg-4">
             <ul class="list-style-2 list-style-light text-light">
               <li>
-                <span class="fw-600 me-2">Nombre:</span>Hernán Carracedo
+                <span class=" text-black-50 fw-600 me-2">Nombre:</span> <span  class="text-black-50">Hernán Carracedo</span>
               </li>
               <li>
-                <span class="fw-600 me-2">Email:</span><a href="mailto:chat@simone.com">hernanpampa@gmail.com</a>
+                <span class=" text-black-50 fw-600 me-2">Email:</span><span  class="text-black-50">hernanpampa@gmail.com</span>
               </li>
               <li class="border-0">
-                <span class="fw-600 me-2">De:</span>General Pico, La Pampa,
-                Argentina
+                <span class=" text-black-50 fw-600 me-2">De:</span><span  class="text-black-50">General Pico, La Pampa,
+                  Argentina</span>
               </li>
             </ul>
             <a href="#" class="btn btn-primary rounded-pill">Descargar CV</a>
@@ -133,6 +143,9 @@
       </div>
     </div>
   </section>
+  <!-- /SOBREMI
+    ============================================= -->
+
   <!-- DEVELOPER
     ============================================= -->
   <section id="developer" class="section bg-dark-2">
@@ -166,7 +179,6 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
       <div class="row gy-5">
         <div class="col-lg-5 col-xl-4">
@@ -189,11 +201,11 @@
     </div>
   </section>
 
-  <!-- DEVELOPER
+  <!-- QUÉ HAGO?
     ============================================= -->
   <section id="quehago" class="section bg-dark-2">
     <div class="container">
-      <!-- Heading -->
+
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
             text-24 text-muted
@@ -222,7 +234,7 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
+
 
       <div class="row gy-5">
 
@@ -297,12 +309,16 @@
       </div>
     </div>
   </section>
+  <!-- /QUÉ HAGO
+    ============================================= -->
+
+  <!-- PORTFOLIO
+    ============================================= -->
 
 
   <section id="portfolio" class="portfolio section bg-dark-2">
 
     <div class="container">
-      <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
               text-24 text-muted
@@ -331,7 +347,6 @@
                 "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
 
       <div class="row">
@@ -417,7 +432,11 @@
     </div>
   </section>
 
+  <!-- /PORTOFOLIO
+    ============================================= -->
 
+  <!-- PROFESOR
+    ============================================= -->
 
 
   <section class="section bg-dark-2">
@@ -478,6 +497,11 @@
 
 
   </section>
+  <!-- /PROFESOR
+    ============================================= -->
+
+  <!-- CV PROFESOR
+    ============================================= -->
 
   <section id="teacher" class="section bg-dark-2">
     <div class="container">
@@ -540,10 +564,16 @@
       </div>
 
   </section>
+  <!-- /CV PROFESOR
+    ============================================= -->
 
-  <section id="speaker" class="section bg-dark-1">
+
+  <!-- SPEAKER
+    ============================================= -->
+
+
+  <section id="speaker" class="section bg-dark-4">
     <div class="container">
-      <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
             text-24 text-muted
@@ -556,7 +586,7 @@
           EXPERIENCIA EVEREST
         </h2>
         <p class="
-              text-9 text-white
+              text-9 text-black
               fw-600
               position-absolute
               w-100
@@ -572,21 +602,20 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
       <div class="row gy-5">
         <div class="col-lg-5 col-xl-4">
           <img class="img-responsive rounded" src="./assets/img/output-onlinegiftools.gif" width="100%" />
         </div>
         <div class="col-lg-7 col-xl-8 text-center text-lg-start">
-          <p class="text-white-50">
+          <p class="text-black-50">
             Ésta expedición fue para nosotros un gran desafío, el sueño de muchos de los que nos dedicamos a este
             deporte, para el que se requiere fortaleza, determinación, experiencia; y mucho más aún: comprometer mente,
             cuerpo y alma.</p>
-          <p class="text-white-50"> Por esos motivos anhelamos que trascienda lo personal y se convierta en una
+          <p class="text-black-50"> Por esos motivos anhelamos que trascienda lo personal y se convierta en una
             experiencia más amplia, que incluya e inspire a todos los que deseen vivir la aventura, cada uno desde su
             sitio.</p>
-          <p class="text-white-50"> Para alcanzar esta nueva meta, hemos diseñado una presentación de aproximadamente 70
+          <p class="text-black-50"> Para alcanzar esta nueva meta, hemos diseñado una presentación de aproximadamente 70
             minutos con el fin de compartir principalmente los valores que se requieren para emprender un gran proyecto
             vital y los que efectivamente se ponen en juego en situaciones y ambientes difíciles.</p>
         </div>
@@ -594,10 +623,15 @@
 
     </div>
   </section>
+  <!-- /SPEAKER
+    ============================================= -->
 
-  <section id="speaker" class="section bg-dark-1">
+  <!-- PRESENTACION
+    ============================================= -->
+
+
+  <section id="speaker" class="section bg-dark-4">
     <div class="container">
-      <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
             text-24 text-muted
@@ -610,7 +644,7 @@
           EXPERIENCIA EVEREST
         </h2>
         <p class="
-              text-9 text-white
+              text-9 text-black
               fw-600
               position-absolute
               w-100
@@ -626,17 +660,16 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
 
 
       <div class="col-lg-12 col-xl-12 text-center text-lg-start">
-        <p class="text-white-50">
+        <p class="text-black-50">
           Grandes empresas e instituciones confiaron en nosotros para motivar a su personal, contagiar entusiasmo y
           transmitir valores, aprovechando al máximo las enseñanzas de la vida en entornos naturales hostiles.</p>
-        <p class="text-white-50"> La riqueza de esos aprendizajes radica en que pueden ser aplicados a los desafíos
+        <p class="text-black-50"> La riqueza de esos aprendizajes radica en que pueden ser aplicados a los desafíos
           laborales, personales y familiares de la vida cotidiana. </p>
-        <p class="text-white-50"> Progresar en el empleo, graduarse en una profesión, tener un hijo, superarse a sí
+        <p class="text-black-50"> Progresar en el empleo, graduarse en una profesión, tener un hijo, superarse a sí
           mismo, son cumbres tan altas como el propio Everest o aún mayores, y están ahí, esperando que nos decidamos a
           poner en juego todo nuestro potencial para alcanzarlas.</p>
       </div>
@@ -691,15 +724,18 @@
     </div>
     </div>
   </section>
+  <!-- /PRESENTACION
+    ============================================= -->
+
+
+  <!-- VALORES
+    ============================================= -->
 
 
 
-
-
-  <section id="services" class="section bg-dark-1">
+  <section id="valores" class="section bg-dark-4">
 
     <div class="container">
-      <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
               text-24 text-muted
@@ -712,7 +748,7 @@
           EXPERIENCIA EVEREST
         </h2>
         <p class="
-                text-9 text-white
+                text-9 text-black
                 fw-600
                 position-absolute
                 w-100
@@ -866,11 +902,14 @@
 
     </div>
   </section>
+  <!-- /VALORES
+    ============================================= -->
 
+  <!-- WRITER
+    ============================================= -->
 
   <section id="writer" class="section bg-dark-2">
     <div class="container">
-      <!-- Heading -->
       <div class="position-relative d-flex text-center mb-5">
         <h2 class="
             text-24 text-muted
@@ -891,7 +930,7 @@
               lh-base
               mb-0
             ">
-            writer<span class="
+          writer<span class="
                 heading-separator-line
                 border-bottom border-3 border-primary
                 d-block
@@ -899,7 +938,6 @@
               "></span>
         </p>
       </div>
-      <!-- Heading end-->
 
 
 
@@ -945,6 +983,14 @@
       </div>
     </div>
   </section>
+
+  <!-- /WRITER
+    ============================================= -->
+
+  <!-- SPEAKER
+    ============================================= -->
+
+
   <section id="speaker" class="section bg-dark-2">
     <div class="container">
       <!-- Heading -->
@@ -999,6 +1045,15 @@
 
     </div>
   </section>
+
+  <!-- /SPEAKER
+    ============================================= -->
+
+
+  <!-- LIBRO
+    ============================================= -->
+
+
   <section id="speaker" class="section bg-dark-2">
     <div class="container">
       <!-- Heading -->
@@ -1160,76 +1215,35 @@
     </div>
   </section>
 
+  <!-- /LIBRO
+    ============================================= -->
 
 
-
-
-
-
-
-
+  <!-- IR ARRIBA
+    ============================================= -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
-
+  <!-- BOOTSTRAP JS
+    ============================================= -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+  <!-- TYPEWRITER
+    ============================================= -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- PARTICLES
+    ============================================= -->
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- FLIPBOOK
+    ============================================= -->
+  <script src="./assets/js/flipbook.js"></script>
+  <!-- SITIO 
+    ============================================= -->
   <script src="./assets/js/script.js"></script>
-
-
-
-  <script type="text/javascript">
-
-    function loadApp() {
-
-      var flipbook = $('.flipbook');
-
-      // Check if the CSS was already loaded
-
-      if (flipbook.width() == 0 || flipbook.height() == 0) {
-        setTimeout(loadApp, 10);
-        return;
-      }
-
-      $('.flipbook .double').scissor();
-
-      // Create the flipbook
-
-      $('.flipbook').turn({
-        // Elevation
-
-        elevation: 50,
-
-        // Enable gradients
-
-        gradients: true,
-
-        // Auto center this flipbook
-
-        autoCenter: true
-
-      });
-    }
-
-    // Load the HTML4 version if there's not CSS transform
-
-    yepnope({
-      test: Modernizr.csstransforms,
-      yep: ['./assets/js/turn.min.js'],
-      nope: ['./assets/js/turn.html4.min.js'],
-      both: ['./assets/js/scissor.min.js', './assets/css/double-page.css'],
-      complete: loadApp
-    });
-
-  </script>
 </body>
-
 </html>
